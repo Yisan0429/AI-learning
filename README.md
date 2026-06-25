@@ -22,7 +22,7 @@
 ```bash
 cd /home/yisan/ai-learning
 source .venv/bin/activate
-pip install jupyter numpy matplotlib torch torchvision scikit-learn seaborn tqdm umap-learn
+uv pip install jupyter numpy matplotlib torch torchvision scikit-learn seaborn tqdm umap-learn pandas notebook -i https://pypi.tuna.tsinghua.edu.cn/simple
 jupyter notebook notebooks/
 ```
 
