@@ -20,9 +20,11 @@
 ## 🚀 快速开始
 
 ```bash
-cd /home/yisan/ai-learning
+cd AI-learning
+python3 -m venv .venv
 source .venv/bin/activate
-uv pip install jupyter numpy matplotlib torch torchvision scikit-learn seaborn tqdm umap-learn pandas notebook -i https://pypi.tuna.tsinghua.edu.cn/simple
+uv pip install jupyter numpy matplotlib scikit-learn seaborn tqdm umap-learn pandas notebook -i https://pypi.tuna.tsinghua.edu.cn/simple
+pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
 jupyter notebook notebooks/
 ```
 
