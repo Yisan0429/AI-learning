@@ -1,4 +1,6 @@
-# AI Learning — 深度学习项目
+# AI Learning
+
+暂为个人的深度学习项目
 
 ## 章节
 
