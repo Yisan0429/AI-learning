@@ -1,6 +1,6 @@
-# AI Learning — 深度学习系统学习项目
+# AI Learning
 
-10 章系统课程：Python 基础 → 核心架构（CNN/RNN/Transformer）→ 生成模型（VAE/GAN/DDcGAN）。
+暂为个人的深度学习项目
 
 ## 章节
 
