@@ -1,13 +1,11 @@
-# AI Learning — 人工智能系统学习项目
-
-从 Python 语法到 LLM Agent 部署，14 章系统课程覆盖 AI 学习全链路：基础概念 → 经典深度学习 → 现代 AI 工程（RAG/Agent/多模态/MLOps）。
+# AI Learning — 深度学习项目
 
 ## 章节
 
 | # | 笔记本 | 内容 | 大小 |
 |---|--------|------|------|
 | 1 | `ch01_python_basics.ipynb` | Python 基础与环境配置（语法 + C++ 对比 + conda/pip/venv） | 35K |
-| 2 | `ch02_ml_fundamentals.ipynb` | 机器学习基础概念（27 个核心概念的统一定义：数学前提 + ML 术语 + 补充） | 11K |
+| 2 | `ch02_ml_fundamentals.ipynb` | 机器学习基础（27 个核心概念的统一定义：数学前提 + ML 术语 + 补充） | 11K |
 | 3 | `ch03_deep_learning_basics.ipynb` | 深度学习基础（感知机/激活函数/损失函数/梯度下降/反向传播/MLP/MNIST 纯 NumPy） | 42K |
 | 4 | `ch04_model_evaluation.ipynb` | 模型评估与正则化（偏差-方差分解/交叉验证/L1-L2/Dropout/ROC-AUC/学习曲线/贝叶斯视角） | 22K |
 | 5 | `ch05_pytorch_intro.ipynb` | PyTorch 入门（Tensor/Autograd 计算图/nn.Module/Dataset 协议/训练循环/模型保存） | 21K |
@@ -24,7 +22,7 @@
 ## 学习路线
 
 ```
-L1 入门    Ch1(Python+环境) → Ch2(ML 基础概念)
+L1 入门    Ch1(Python+环境) → Ch2(ML 基础)
                 ↓
 L2 核心    Ch3(DL 基础) → Ch4(模型评估) → Ch5(PyTorch)
                 ↓
