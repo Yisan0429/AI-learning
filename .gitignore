@@ -3,6 +3,4 @@ fig/
 __pycache__/
 .ipynb_checkpoints/
 *.pyc
-
-notebooks/data/
 data/
