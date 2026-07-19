@@ -1,95 +1,89 @@
 # AI Learning — 人工智能系统学习项目
 
-从 Python 语法到 LLM Agent 部署，14 章系统课程覆盖 AI 学习全链路：基础编程 → 经典机器学习/深度学习 → 现代 AI 工程（RAG/Agent/多模态/MLOps）。
+从 Python 语法到 LLM Agent 部署，14 章系统课程覆盖 AI 学习全链路：基础概念 → 经典深度学习 → 现代 AI 工程（RAG/Agent/多模态/MLOps）。
 
-## 📚 章节
+## 章节
 
 | # | 笔记本 | 内容 | 大小 |
 |---|--------|------|------|
-| 1 | `ch01_python_basics.ipynb` | Python 基础语法（变量/数据结构/控制流/函数/OOP + C++ 对比） | 22K |
-| 2 | `ch02_conda_packages.ipynb` | Conda 与 Python 包管理（venv/conda/pip/依赖管理最佳实践） | 17K |
-| 3 | `ch03_deep_learning_basics.ipynb` | 深度学习基础（反向传播/GD变体/权重初始化/BatchNorm/MLP/MNIST/统计ML） | 39K |
-| 4 | `ch04_model_evaluation.ipynb` | 模型评估与正则化（bias-variance/交叉验证/L1-L2/Dropout/ROC-AUC/学习曲线） | 22K |
-| 5 | `ch05_pytorch_intro.ipynb` | PyTorch 入门（Tensor/autograd/nn.Module/Dataset/训练循环/模型保存） | 21K |
-| 6 | `ch06_cifar10_cnn.ipynb` | CIFAR-10 分类实战（CNN 架构/数据增强/迁移学习/混淆矩阵分析） | 24K |
-| 7 | `ch07_sequence_nlp.ipynb` | 序列模型与 NLP 基础（RNN/LSTM/GRU 从零实现/tokenization/词嵌入/文本生成） | 20K |
-| 8 | `ch08_llm_sft_rl.ipynb` | LLM 与对齐技术（Transformer/GPT/SFT+LoRA实战/RLHF/DPO/Prompt Engineering） | 21K |
-| 9 | `ch09_pca.ipynb` | PCA 主成分分析（数学推导/特征值分解/Digits 降维重建/方差解释） | 16K |
-| 10 | `ch10_tsne_vae_ddcgan.ipynb` | 非线性降维与生成模型（t-SNE/UMAP/Autoencoder/VAE/DDcGAN） | 47K |
-| 11 | `ch11_rag.ipynb` | RAG 系统实战（Embedding/向量数据库/检索管道/Self-RAG/Graph RAG/RAGAS评估） | 9K |
-| 12 | `ch12_agent.ipynb` | AI Agent 系统（ReAct/Tool Use/多Agent架构/LangGraph/Agent评估） | 7K |
-| 13 | `ch13_multimodal.ipynb` | 多模态 AI（CLIP/GPT-4V/Whisper/TTS/多模态RAG） | 4K |
-| 14 | `ch14_mlops.ipynb` | MLOps 与模型部署（ONNX/量化/FastAPI/Docker/vLLM/生产监控） | 5K |
+| 1 | `ch01_python_basics.ipynb` | Python 基础与环境配置（语法 + C++ 对比 + conda/pip/venv） | 35K |
+| 2 | `ch02_ml_fundamentals.ipynb` | 机器学习基础概念（27 个核心概念的统一定义：数学前提 + ML 术语 + 补充） | 11K |
+| 3 | `ch03_deep_learning_basics.ipynb` | 深度学习基础（感知机/激活函数/损失函数/梯度下降/反向传播/MLP/MNIST 纯 NumPy） | 42K |
+| 4 | `ch04_model_evaluation.ipynb` | 模型评估与正则化（偏差-方差分解/交叉验证/L1-L2/Dropout/ROC-AUC/学习曲线/贝叶斯视角） | 22K |
+| 5 | `ch05_pytorch_intro.ipynb` | PyTorch 入门（Tensor/Autograd 计算图/nn.Module/Dataset 协议/训练循环/模型保存） | 21K |
+| 6 | `ch06_cifar10_cnn.ipynb` | 卷积神经网络：从图像理解空间（CNN 架构/卷积数学本质/池化/感受野/BN/迁移学习） | 22K |
+| 7 | `ch07_sequence_nlp.ipynb` | 循环神经网络：从序列理解时间（RNN/LSTM/BPTT/GRU/tokenization/词嵌入/NLP 任务全景） | 17K |
+| 8 | `ch08_llm_sft_rl.ipynb` | LLM 与对齐技术（Transformer/Self-Attention/GPT/SFT+LoRA/RLHF/DPO/Prompt Engineering） | 19K |
+| 9 | `ch09_pca.ipynb` | PCA 主成分分析（协方差矩阵/特征值分解/拉格朗日推导/降维与重建/方差解释率） | 14K |
+| 10 | `ch10_tsne_vae_ddcgan.ipynb` | 非线性降维与生成模型（t-SNE/UMAP/Autoencoder/VAE/GAN/DDcGAN 双判别器） | 34K |
+| 11 | `ch11_rag.ipynb` | RAG 系统实战（Embedding/向量数据库/检索管道/Self-RAG/Graph RAG/RAGAS 评估） | 6K |
+| 12 | `ch12_agent.ipynb` | AI Agent 系统（ReAct/Tool Use/多 Agent 架构/LangGraph/Agent 评估） | 4K |
+| 13 | `ch13_multimodal.ipynb` | 多模态 AI（CLIP/GPT-4V/Whisper/TTS/多模态 RAG） | 2K |
+| 14 | `ch14_mlops.ipynb` | MLOps 与模型部署（ONNX/量化/FastAPI/Docker/vLLM/生产监控） | 4K |
 
-## 🎯 学习路线
+## 学习路线
 
 ```
-L1 基础    Ch1(Python) → Ch2(环境)
-              ↓
-L2 经典    Ch3(DL基础) → Ch4(模型评估) → Ch5(PyTorch) → Ch6(CIFAR-10)
-              ↓                                        ↓
-           Ch7(RNN/NLP)                              Ch9(PCA)
-              ↓                                        ↓
-L3 现代    Ch8(LLM+对齐+Prompt) ←─────────────── Ch10(t-SNE/VAE/GAN)
-              ↓
-           Ch11(RAG) → Ch12(Agent) → Ch13(多模态)
-              ↓
-工程       Ch14(MLOps/部署)
+L1 入门    Ch1(Python+环境) → Ch2(ML 基础概念)
+                ↓
+L2 核心    Ch3(DL 基础) → Ch4(模型评估) → Ch5(PyTorch)
+                ↓
+           Ch6(CNN: 空间) → Ch7(RNN: 时间)
+                ↓               ↓
+           Ch9(PCA)          Ch8(LLM+对齐)
+                ↓               ↓
+           Ch10(降维与生成) ←───┘
+                ↓
+L3 工程    Ch11(RAG) → Ch12(Agent) → Ch13(多模态)
+                ↓
+           Ch14(MLOps/部署)
 ```
 
-- **无基础**：从 Ch1 逐章执行
-- **有 Python 基础**：从 Ch3 开始
-- **有 DL 基础**：Ch8→Ch11→Ch12→Ch13 现代 AI 主线
-- **关注工程落地**：Ch14 独立成章
+## 各章概要
 
-## 📖 各章概要
+### 第 1 章：Python 基础与环境配置
+变量/类型/容器/控制流/函数/OOP + 每节 C++ 对比。虚拟环境（venv/conda/pip）、镜像源、requirements.txt/environment.yml、依赖管理最佳实践。
 
-### 第 1 章：Python 基础语法
-变量/类型、四种容器、推导式与切片、控制流、函数与 lambda、OOP（手写 DenseLayer）、综合练习：DataLoader。每节附带 C++ 等价代码对比。
-
-### 第 2 章：Conda 与包管理
-venv/pip/conda 三件套、镜像源、requirements.txt vs environment.yml、常见问题排查
+### 第 2 章：机器学习基础
+27 个核心概念的统一入口。三组：(1) 数学前提——向量/矩阵、梯度/链式法则、概率/期望/方差、MLE、熵/KL/交叉熵、拉格朗日乘子、特征值/特征向量、L1/L2 范数；(2) ML 术语——监督/无监督、样本/特征/标签/维度、train/val/test、epoch/batch/iteration、参数/超参数、损失/优化器、过拟合/欠拟合、归一化/标准化、评估指标、Softmax/Sigmoid；(3) 补充——前向/反向、生成/判别模型、Attention、Embedding、聚类、感受野、t 分布。
 
 ### 第 3 章：深度学习基础
-感知机、激活函数（Sigmoid/ReLU/Tanh/Softmax + 可视化）、梯度消失理论、损失函数（MSE/BCE/CE）、梯度下降可视化、SGD/Momentum/Adam 对比（Rosenbrock 函数优化）、反向传播 8 步手动推导 + 计算图视角、线性/逻辑回归、MLP（任意深度）、权重初始化（Xavier vs He + 激活值标准差验证）、BatchNorm 原理、MNIST 纯 NumPy 实现、统计 ML（SVM/树/森林/KNN）对比
+神经网络定义（三种基本形态：MLP/CNN/RNN）。感知机、激活函数（为什么必须非线性 + 线性退化证明）、损失函数（MSE/BCE/CE + CE-Softmax 梯度推导）、梯度下降（1D→2D→高维直觉）、反向传播（链式法则 + 2-3-1 网络数值手算示例）、线性/逻辑回归、MLP（全连接层的矩阵数学）、MNIST 纯 NumPy 实现、统计 ML 方法概览。
 
 ### 第 4 章：模型评估与正则化
-bias-variance 权衡（多项式回归可视化）、K-Fold 交叉验证（Ridge alpha 选择）、L1/L2/Dropout/ElasticNet 对比、混淆矩阵 + Precision/Recall/F1/ROC-AUC（不平衡数据的警示）、学习曲线（欠拟合/过拟合诊断）、Early Stopping
+偏差-方差分解代数推导（期望展开到 σ²+Bias²+Var）、交叉验证、L1/L2/Dropout 正则化（L1 稀疏性几何视角）、分类评估指标（混淆矩阵/Precision/Recall/F1/ROC-AUC + 准确率陷阱数字案例）、学习曲线、Early Stopping、贝叶斯视角（不确定性量化统一语言）。
 
 ### 第 5 章：PyTorch 入门
-Tensor + GPU、Autograd 自动求导（梯度下降可视化）、nn.Module（Sequential + 自定义模块）、Dataset/DataLoader、标准训练循环模板、模型保存/加载
+Tensor 数据结构（标量/向量/矩阵/张量的数学对应）、Autograd 动态计算图机制、梯度清零原理（zero_grad）、nn.Module 设计哲学（`__init__` vs `forward` 分离）、Dataset/DataLoader 底层协议（`__getitem__`/`__len__`/collate_fn）、标准训练循环（每行代码的作用）、模型保存（state_dict vs 完整模型）。
 
-### 第 6 章：CIFAR-10 实战
-卷积的数学本质（稀疏连接/参数共享/特征层级）、池化层理论（平移不变性/感受野）、数据增强（RandomCrop/Flip/ColorJitter）、VGG 风格 3-block CNN + BatchNorm + Dropout、Kaiming 初始化、OneCycleLR 学习率调度、混淆矩阵 + 分类报告、迁移学习 ResNet-18
+### 第 6 章：卷积神经网络——从图像理解空间
+CNN 架构设计（为什么 MLP 不适合图像：空间结构破坏 + 参数爆炸，896 vs 157 万）、卷积数学本质（互相关/稀疏连接/参数共享/特征层级）、池化（平移容忍/增大感受野）、批归一化、感受野递推公式与数值例子、训练策略、迁移学习（CNN 局限→引出 Ch7 RNN）。
 
-### 第 7 章：序列模型与 NLP 基础
-RNN Cell 手写实现、BPTT 梯度消失推导、LSTM（三门 + 细胞状态）从零实现与 PyTorch 版、GRU 对比、Tokenization（word/char/BPE）、Word2Vec/GloVe 词嵌入、LSTM 字符级语言模型（完整训练 + 文本生成）、序列模型全景对比、经典 NLP 任务体系
+### 第 7 章：循环神经网络——从序列理解时间
+从 CNN 的局限出发（空间不变量→时间不变量→参数共享的推广）。RNN 核心机制（隐藏状态/权重共享/BPTT 3 步链式展开）、LSTM（三门+细胞状态/遗忘门消除梯度消失推导/GRU 工程对比）、NLP 基础（tokenization/词嵌入/Skip-gram 目标函数/序列模型全景对比/NLP 任务体系）。
 
-### 第 8 章：LLM 与对齐
-Transformer 架构详解、Self-Attention 信息检索视角（Q/K/V + √dₖ 缩放原理）、因果掩码/位置编码可视化、GPT 系列发展、SFT（ChatML + Loss Masking + TRL SFTTrainer+LoRA 实战）、RLHF 三阶段（奖励模型 + PPO）、DPO 损失函数实现、HuggingFace 推理、Prompt Engineering（Zero-shot/Few-shot/CoT/结构化输出/System Prompt/注入防御）
+### 第 8 章：LLM 与对齐技术
+Transformer 架构详解（Self-Attention Q/K/V 角色 + O(n²d) 复杂度分析 + 信息检索视角）、GPT 系列发展、SFT 监督微调（ChatML/Loss Masking/TRL SFTTrainer+LoRA 实战）、RLHF 三阶段（奖励模型/PPO）、DPO 损失函数推导（Bradley-Terry 偏好模型）、Prompt Engineering（zero-shot/few-shot/CoT/结构化输出/System Prompt/注入防御）。
 
 ### 第 9 章：PCA 主成分分析
-PCA 三种等价视角（最大方差/最小重建误差/最大分离度）、中心化 → 协方差矩阵 → 特征值分解完整推导、Digits 降维重建（1/2/4/8/16/32/48/64 PCs 对比）、累积方差解释曲线
+PCA 几何直觉（方差最大的方向=特征向量，特征值=方差大小）。完整数学推导：数据中心化→协方差矩阵→拉格朗日乘子法构造与求解→特征方程→降维→重建（k=1 特例到 k 维推广）→方差解释率。Digits 降维重建与累积方差解释曲线。
 
 ### 第 10 章：非线性降维与生成模型
-
-**t-SNE**：完整推导（高斯核→t 分布→KL 散度）、UMAP 对比、流形假设与潜在空间理论。**自编码器**：MLP-AE 递进，潜在空间的连续性与流形假设。**VAE**：reparameterization trick + 生成采样，ELBO 分解为重建损失 + KL 正则。
-
-**DDcGAN**：GAN 基础（Minimax 博弈/模式坍塌）、双判别器架构设计（全局判别器 + 局部判别器）、Hinge Loss 公式推导、Projection Discriminator 条件注入。完整 PyTorch 实现：Generator + GlobalDiscriminator + LocalDiscriminator + DDcGANLoss。MNIST 训练演示 + 生成结果可视化。
+t-SNE（高斯核→t 分布→KL 散度最小化/困惑度/crowding problem）、UMAP 对比、Autoencoder（潜在空间与流形假设）、VAE（reparameterization trick/ELBO）。GAN 基础（生成器与判别器的架构级定义/极小极大博弈/最优判别器推导/JS 散度等价/梯度消失数学根源）。DDcGAN 重点：单判别器的感受野冲突→双判别器分而治之（全局+局部）/Hinge Loss 梯度机制/投影判别器内积结构/随机裁剪策略/训练平衡三手段。完整 PyTorch 实现与 MNIST 训练演示。
 
 ### 第 11 章：RAG 系统实战
-Embedding 语义搜索（对比学习/InfoNCE）、向量数据库（Chroma/HNSW/IVF/混合检索）、RAG 三阶段（Chunking 策略/检索→重排序→生成）、高级 RAG（Self-RAG/CRAG/Graph RAG）、RAGAS 评估（Faithfulness/Answer Relevance/Context Recall）
+Embedding 语义搜索、向量数据库（Chroma/HNSW/IVF）、RAG 管道（Chunking/检索/重排序/生成）、高级 RAG（Self-RAG/CRAG/Graph RAG）、RAGAS 评估。
 
 ### 第 12 章：AI Agent 系统
-ReAct 模式（Thought→Action→Observation 循环）、记忆系统（短期/工作/长期）、Plan-and-Execute、Tool Use/Function Calling 协议、工具设计原则、多 Agent 架构（层级/流水线/辩论式）、LangGraph 有向图编排、Agent 评估指标
+ReAct 模式、记忆系统、Tool Use/Function Calling、多 Agent 架构（层级/流水线/辩论式）、LangGraph 编排、Agent 评估。
 
 ### 第 13 章：多模态 AI
-CLIP 对比学习（共享嵌入空间/零样本分类）、GPT-4V/Gemini Vision 架构、Whisper STT（模型选择/语言支持）、TTS 语音合成、多模态 RAG（跨模态检索 + 多模态 LLM）、ImageBind 跨模态 embedding
+CLIP 对比学习、GPT-4V/Gemini Vision、Whisper STT、TTS、多模态 RAG。
 
 ### 第 14 章：MLOps 与模型部署
-模型导出（ONNX/TorchScript/GGUF）、量化（INT8/INT4/GPTQ/AWQ）、FastAPI 模型服务化、Docker 容器化 + GPU 支持、LLM 推理引擎（vLLM/Ollama/llama.cpp/TGI）、生产监控（延迟/吞吐量/数据漂移）、反馈循环与持续迭代
+模型导出（ONNX/量化）、FastAPI 服务化、Docker 容器化 + GPU 支持、LLM 推理引擎（vLLM/Ollama）、生产监控。
 
-## 🚀 快速开始
+## 快速开始
 
 ```bash
 cd AI-learning
@@ -100,7 +94,7 @@ uv pip install torch torchvision --index-url https://download.pytorch.org/whl/cp
 jupyter notebook notebooks/
 ```
 
-## 🔧 环境要求
+## 环境要求
 
 - Python 3.10+
 - PyTorch 2.0+, torchvision
